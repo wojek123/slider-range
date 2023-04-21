@@ -1,0 +1,8 @@
+<div class="slider-container">
+    <div class="slider-track"></div>
+    <!-- <div class="slider-range"></div> -->
+    <div class="left-thumb" [style.left]="getLeftThumbPosition()"></div>
+    <div class="right-thumb" [style.left]="getRightThumbPosition()"></div>
+    <input type="range" name="min" [min]="start" [max]="end" [value]="minVal" [step]="step" (change)="setMinValue($event)" />
+    <input type="range" name="max" [min]="start" [max]="end" [value]="maxVal" [step]="step" (change)="setMaxValue($event)" />
+</div>
